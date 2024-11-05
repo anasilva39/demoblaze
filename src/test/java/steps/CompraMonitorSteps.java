@@ -70,11 +70,11 @@ public class CompraMonitorSteps {
         // Utilizando WebDriverWait para esperar elementos visíveis antes de interagir
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("name"))).sendKeys("Ana Silva");
-        driver.findElement(By.id("country")).sendKeys("País Teste");
+        driver.findElement(By.id("country")).sendKeys("Brasil Teste");
         driver.findElement(By.id("city")).sendKeys("Cidade Teste");
         driver.findElement(By.id("card")).sendKeys("1234 5678 9123 4567");
-        driver.findElement(By.id("month")).sendKeys("01");
-        driver.findElement(By.id("year")).sendKeys("2025");
+        driver.findElement(By.id("month")).sendKeys("11");
+        driver.findElement(By.id("year")).sendKeys("2024");
         driver.findElement(By.xpath("//button[contains(text(),'Purchase')]")).click();
         Thread.sleep(2000); // Pause de 2 segundos após preencher os dados
     }
